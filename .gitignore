@@ -1,0 +1,17 @@
+# Ficheiros de sistema
+.DS_Store
+.env
+
+# Pastas de dependências
+/node_modules
+/backend/node_modules
+/frontend-web/node_modules
+/mobile-app/node_modules
+
+# Ficheiros de build e logs
+/frontend-web/build
+npm-debug.log
+yarn-error.log
+
+# Ficheiro da base de dados local
+/backend/database.sqlite
