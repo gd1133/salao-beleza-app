@@ -32,18 +32,19 @@ export default function SalaoScreen() {
 
   // Lista de fotos para o carrossel. Substitua pelos links das suas fotos reais.
   const fotosCarrossel = [
-    { id: '1', url: 'https://placehold.co/600x600/282c34/ffffff?text=Corte+1' },
-    { id: '2', url: 'https://placehold.co/600x600/282c34/ffffff?text=Corte+2' },
-    { id: '3', url: 'https://placehold.co/600x600/282c34/ffffff?text=Corte+3' },
-    { id: '4', url: 'https://placehold.co/600x600/282c34/ffffff?text=Corte+4' },
-    { id: '5', url: 'https://placehold.co/600x600/282c34/ffffff?text=Corte+5' },
+    
+    { id: '1', url: 'https://homensquesecuidam.com/wp-content/uploads/2021/05/milico.jpg' },
+    { id: '2', url: 'https://homensquesecuidam.com/wp-content/uploads/2021/06/corte-em-v-masculino-com-risca-grossa-longa-1024x1024.jpg' },
+    { id: '3', url: 'https://unhasdecoradas2025.com.br/wp-content/uploads/2024/07/corte-de-cabelo-masculino-2025-imagem-barbeiro-dicas-diarias.jpg' },
+    { id: '4', url: 'https://i.pinimg.com/736x/41/7a/56/417a567c249bfe03d255fea601684b81.jpg' },
+    { id: '5', url: 'https://i.pinimg.com/originals/c1/8f/9d/c18f9d7c521e6b59e5689e8a24e5784a.jpg' },
   ];
 
   // --- Funções de Lógica ---
 
   // Função para buscar os dados públicos (serviços e horários) do backend
   const buscarDados = useCallback(() => {
-    setIsLoading(true);
+    setIsLoading(true);https://br.images.search.
     Promise.all([
       fetch(`${API_URL}/servicos`).then(response => response.json()),
       fetch(`${API_URL}/horarios`).then(response => response.json())
@@ -189,8 +190,8 @@ export default function SalaoScreen() {
             <View style={styles.footer}>
                 <Text style={styles.sectionTitle}>Nosso Endereço</Text>
                 <View style={styles.enderecoContainer}>
-                    <Text style={styles.enderecoText}>Rua da Barbearia, 123</Text>
-                    <Text style={styles.enderecoText}>Bairro do Corte, Cidade Navalha - SP</Text>
+                    <Text style={styles.enderecoText}>Rua Sebastião Fonseca, 120</Text>
+                    <Text style={styles.enderecoText}>Bairro do Corte, Centenario2 Cidade Porto Ferreira - SP</Text>
                 </View>
                 <Pressable style={styles.whatsappButton} onPress={abrirWhatsApp}>
                     <Ionicons name="logo-whatsapp" size={24} color="white" />
