@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // IMPORTANTE: Troque este endereço pelo IP do seu computador!
-const API_URL = 'http://192.168.1.134:3001'; // Exemplo: use o IP da sua rede
+const API_URL = 'https://salao-zepaulo.onrender.com'; // Exemplo: use o IP da sua rede
 
 // --- Componente Principal da Tela Admin ---
 export default function AdminScreen() {
